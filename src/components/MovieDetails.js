@@ -9,7 +9,7 @@ export const MovieDetails = ({ movie, getMovieById }) => {
 
   useEffect(() => {
     getMovieById(id);
-  }, [id]);
+  }, [id, getMovieById]);
 
   const {
     backdrop_path,

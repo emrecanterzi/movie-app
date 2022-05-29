@@ -1,4 +1,4 @@
-import { Routes, Route, useNavigate, useSearchParams } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
 import Navbar from "./Navbar";
 import "../styles/App.css";
@@ -6,7 +6,7 @@ import MovieDetails from "./MovieDetails";
 import SearchMovieList from "./SearchMovieList";
 import PopularMovies from "./PopularMovies";
 import { connect } from "react-redux";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export const App = () => {
   useEffect(() => {

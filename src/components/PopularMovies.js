@@ -6,7 +6,7 @@ import MovieCart from "./MovieCart";
 export const PopularMovies = ({ movies, getPopularMovies }) => {
   useEffect(() => {
     getPopularMovies();
-  }, []);
+  }, [getPopularMovies]);
 
   return (
     <div className="container">

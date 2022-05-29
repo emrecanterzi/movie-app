@@ -6,9 +6,9 @@ import thunk from "redux-thunk";
 import App from "./components/App";
 import reducer from "./reducers";
 import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap";
-import { BrowserRouter } from "react-router-dom";
 
 const store = createStore(reducer, applyMiddleware(thunk));
 

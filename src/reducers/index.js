@@ -13,7 +13,7 @@ const initialState = {
   error: null,
 };
 
-export default (state = initialState, { type, payload }) => {
+const reducer = (state = initialState, { type, payload }) => {
   switch (type) {
     case GET_MOVIES:
       return { ...state, movies: payload, error: null };
@@ -33,3 +33,4 @@ export default (state = initialState, { type, payload }) => {
       return state;
   }
 };
+export default reducer;

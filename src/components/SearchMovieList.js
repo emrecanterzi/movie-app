@@ -9,7 +9,7 @@ export const SearchMovieList = ({ movies, searchMovie }) => {
 
   useEffect(() => {
     searchMovie(query);
-  }, [query]);
+  }, [query, searchMovie]);
 
   return (
     <div className="container">

@@ -7,7 +7,7 @@ export const MovieCartList = ({ movies, getMoviesData }) => {
   useEffect(() => {
     getMoviesData();
     return () => {};
-  }, []);
+  }, [getMoviesData]);
 
   return (
     <div className="row  mt-2">
