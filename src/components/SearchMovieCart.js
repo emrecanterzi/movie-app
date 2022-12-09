@@ -7,10 +7,10 @@ export default function SearchMovieCart({ movie }) {
   return (
     <div className="card mb-3">
       <div className="row g-0">
-        <div className="col-md-4">
+        <div className="col-md-4 d-flex d-md-block">
           <img
             src={`http://image.tmdb.org/t/p/w200${poster_path}`}
-            className="img-fluid rounded-start"
+            className="img-fluid rounded-start mx-auto"
             alt="..."
           />
         </div>

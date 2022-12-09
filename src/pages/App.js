@@ -1,9 +1,9 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Home from "./Home";
-import Navbar from "./Navbar";
+import Navbar from "../components/Navbar";
 import "../styles/App.css";
-import MovieDetails from "./MovieDetails";
+import MovieDetails from "../components/MovieDetails";
 import SearchMovieList from "./SearchMovieList";
 import PopularMovies from "./PopularMovies";
 import { connect } from "react-redux";
