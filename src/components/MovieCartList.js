@@ -1,3 +1,4 @@
+import React from "react";
 import { useEffect } from "react";
 import { connect } from "react-redux";
 import { getMoviesData } from "../actions";
@@ -10,7 +11,7 @@ export const MovieCartList = ({ movies, getMoviesData }) => {
   }, [getMoviesData]);
 
   return (
-    <div className="row  mt-2">
+    <div className="row mt-2">
       {movies.map((movie) => (
         <MovieCart movie={movie} key={movie.id} />
       ))}
