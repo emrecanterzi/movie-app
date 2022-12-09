@@ -1,5 +1,5 @@
 import React from "react";
-import MovieCartList from "./MovieCartList";
+import MovieCartList from "../components/MovieCartList";
 
 export const Home = () => {
   return (

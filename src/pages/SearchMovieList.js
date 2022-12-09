@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
 import { searchMovie } from "../actions";
-import SearchMovieCart from "./SearchMovieCart";
+import SearchMovieCart from "../components/SearchMovieCart";
 
 export const SearchMovieList = ({ movies, searchMovie }) => {
   const query = useLocation().search.split("=")[1];
@@ -12,7 +12,7 @@ export const SearchMovieList = ({ movies, searchMovie }) => {
   }, [query, searchMovie]);
 
   return (
-    <div className="container">
+    <div className="container pt-3 mt-5">
       <h1 className="text-center">
         {movies.length} Results Found For{" "}
         <span className="text-success">-{query}-</span>
