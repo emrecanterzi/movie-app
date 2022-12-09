@@ -12,6 +12,7 @@ export const MovieCart = ({ movie }) => {
     original_language,
     vote_count,
   } = movie;
+
   return (
     <div className="col-md-3 col-12 my-2">
       <div className="card h-100">

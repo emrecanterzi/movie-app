@@ -1,3 +1,4 @@
+import React from "react";
 import MovieCartList from "./MovieCartList";
 
 export const Home = () => {
